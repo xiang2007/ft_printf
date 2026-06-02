@@ -21,29 +21,6 @@
 # define LOWHEX "0123456789abcdef"
 # define UPHEX "0123456789ABCDEF"
 
-typedef enum e_parse
-{
-	VOID,
-	STR,
-	INT,
-	CHAR,
-	DEC,
-	L_HEX,
-	H_HEX,
-	PER,
-	ZFILL
-}			t_parse;
-
-typedef struct s_parse
-{
-	int	z_fill;
-	enum e_just
-	{
-		LEFT,
-		RIGHT
-	}			t_just;
-}				t_parse;
-
 int		ft_putchar(int c);
 size_t	ft_strlen(const char *str);
 int		ft_putstr(const char *c);
